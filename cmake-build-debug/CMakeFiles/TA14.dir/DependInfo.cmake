@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/User/CLionProjects/TA14/BigNumber.cpp" "/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles/TA14.dir/BigNumber.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA14/main.cpp" "/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles/TA14.dir/main.cpp.o"
+  "/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/BigNumber.cpp" "/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles/TA14.dir/BigNumber.cpp.o"
+  "/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/MyBigNumber.cpp" "/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles/TA14.dir/MyBigNumber.cpp.o"
+  "/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/main.cpp" "/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles/TA14.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

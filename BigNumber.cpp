@@ -377,6 +377,22 @@ BigNumber operator+( const BigNumber & num1, const BigNumber & num2){
     return sum;
 }
 
+BigNumber operator-( const BigNumber & num1, const BigNumber & num2){
+    BigNumber subtract;
+    if(num1.sign == num2.sign){
+        subtract = BigNumber:: unsignedSubtract(num1, num2);
+        subtract.sign = BigNumber:: unsignedMax(num1 , num2).sign;
+    }
+    else{
+        subtract = BigNumber::unsignedAdd(num1, num2);
+        subtract.sign = num1.sign ;
+    }
+    if(subtract.numOfDigits == 1 && subtract[0] == 0 ){
+        subtract.sign = true;
+    }
+    return subtract;
+}
+
 BigNumber BigNumber:: operator>>( unsigned shift ){
     if ( numOfDigits < shift ){
         throw invalid_argument("Shift must be less than number of digits.");
@@ -397,3 +413,38 @@ BigNumber BigNumber:: operator>>( unsigned shift ){
     }
     return temp;
 }
+
+BigNumber &BigNumber::operator++() {
+    for(size_t i {0} ; i< numOfDigits ; ++i){
+        ++numArray[i];
+    }
+    return *this;
+}
+
+BigNumber &BigNumber::operator--() {
+    for (size_t i{0}; i < numOfDigits; ++i) {
+        --numArray[i];
+    }
+    return *this;
+}
+
+BigNumber BigNumber::operator--(int) {
+    BigNumber temp{*this};
+
+    for(size_t i {0} ; i< numOfDigits ; ++i){
+        numArray[i]--;
+    }
+
+    return temp;
+}
+
+BigNumber BigNumber::operator++(int)  {
+    BigNumber temp{*this};
+
+    for(size_t i {0} ; i< numOfDigits ; ++i){
+        numArray[i]++;
+    }
+
+    return temp;
+}
+

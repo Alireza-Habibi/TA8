@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/PC-MAHDI/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/PC-MAHDI/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/User/CLionProjects/TA14
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/PC-MAHDI/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/PC-MAHDI/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ BigNumber.cpp.s:
 	$(MAKE) -f CMakeFiles/TA14.dir/build.make CMakeFiles/TA14.dir/BigNumber.cpp.s
 .PHONY : BigNumber.cpp.s
 
+MyBigNumber.o: MyBigNumber.cpp.o
+
+.PHONY : MyBigNumber.o
+
+# target to build an object file
+MyBigNumber.cpp.o:
+	$(MAKE) -f CMakeFiles/TA14.dir/build.make CMakeFiles/TA14.dir/MyBigNumber.cpp.o
+.PHONY : MyBigNumber.cpp.o
+
+MyBigNumber.i: MyBigNumber.cpp.i
+
+.PHONY : MyBigNumber.i
+
+# target to preprocess a source file
+MyBigNumber.cpp.i:
+	$(MAKE) -f CMakeFiles/TA14.dir/build.make CMakeFiles/TA14.dir/MyBigNumber.cpp.i
+.PHONY : MyBigNumber.cpp.i
+
+MyBigNumber.s: MyBigNumber.cpp.s
+
+.PHONY : MyBigNumber.s
+
+# target to generate assembly for a file
+MyBigNumber.cpp.s:
+	$(MAKE) -f CMakeFiles/TA14.dir/build.make CMakeFiles/TA14.dir/MyBigNumber.cpp.s
+.PHONY : MyBigNumber.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... BigNumber.o"
 	@echo "... BigNumber.i"
 	@echo "... BigNumber.s"
+	@echo "... MyBigNumber.o"
+	@echo "... MyBigNumber.i"
+	@echo "... MyBigNumber.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

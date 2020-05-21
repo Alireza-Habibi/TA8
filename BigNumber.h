@@ -9,6 +9,7 @@ class BigNumber {
     friend std::ostream& operator<<( std::ostream & output, const BigNumber & myBig );
     friend std::istream& operator>>( std::istream & input, BigNumber & myBig );
     friend BigNumber operator+( const BigNumber & num1, const BigNumber & num2);
+    friend BigNumber operator-( const BigNumber & num1, const BigNumber & num2);
 private:
     bool sign;
     int8_t * numArray = nullptr;
@@ -31,6 +32,7 @@ public:
     static BigNumber unsignedAdd( const BigNumber& num1, const BigNumber& num2 );
     static BigNumber unsignedSubtract( const BigNumber& num1, const BigNumber& num2 );
 
+
     // end of private list
 
     BigNumber( const std::string & str );
@@ -45,6 +47,10 @@ public:
     BigNumber & operator=(const BigNumber & rightNum);
     BigNumber & operator=(BigNumber && rightNum) noexcept ;   // move assignment overloading
     BigNumber operator-() const;
+    BigNumber & operator++();
+    BigNumber & operator--();
+    BigNumber operator++(int);
+    BigNumber operator--(int);
     int operator[](size_t index) const;
     bool operator==( const BigNumber & myBig) const;
     bool operator!=( const BigNumber & myBig) const;
@@ -54,6 +60,7 @@ public:
     bool operator<( const BigNumber & myBig) const;
     BigNumber absoluteValue() const;
     BigNumber operator>>( unsigned shift );
+
 };
 
 

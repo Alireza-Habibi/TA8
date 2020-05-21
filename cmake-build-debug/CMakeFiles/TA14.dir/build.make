@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/PC-MAHDI/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/User/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/PC-MAHDI/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/User/CLionProjects/TA14
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TA14.dir/depend.make
@@ -59,43 +59,58 @@ include CMakeFiles/TA14.dir/flags.make
 
 CMakeFiles/TA14.dir/main.cpp.o: CMakeFiles/TA14.dir/flags.make
 CMakeFiles/TA14.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TA14.dir/main.cpp.o"
-	C:/cygwin64/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TA14.dir/main.cpp.o -c /cygdrive/c/Users/User/CLionProjects/TA14/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TA14.dir/main.cpp.o"
+	C:/cygwin64/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TA14.dir/main.cpp.o -c /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/main.cpp
 
 CMakeFiles/TA14.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TA14.dir/main.cpp.i"
-	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/User/CLionProjects/TA14/main.cpp > CMakeFiles/TA14.dir/main.cpp.i
+	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/main.cpp > CMakeFiles/TA14.dir/main.cpp.i
 
 CMakeFiles/TA14.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TA14.dir/main.cpp.s"
-	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/User/CLionProjects/TA14/main.cpp -o CMakeFiles/TA14.dir/main.cpp.s
+	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/main.cpp -o CMakeFiles/TA14.dir/main.cpp.s
 
 CMakeFiles/TA14.dir/BigNumber.cpp.o: CMakeFiles/TA14.dir/flags.make
 CMakeFiles/TA14.dir/BigNumber.cpp.o: ../BigNumber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TA14.dir/BigNumber.cpp.o"
-	C:/cygwin64/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TA14.dir/BigNumber.cpp.o -c /cygdrive/c/Users/User/CLionProjects/TA14/BigNumber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TA14.dir/BigNumber.cpp.o"
+	C:/cygwin64/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TA14.dir/BigNumber.cpp.o -c /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/BigNumber.cpp
 
 CMakeFiles/TA14.dir/BigNumber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TA14.dir/BigNumber.cpp.i"
-	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/User/CLionProjects/TA14/BigNumber.cpp > CMakeFiles/TA14.dir/BigNumber.cpp.i
+	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/BigNumber.cpp > CMakeFiles/TA14.dir/BigNumber.cpp.i
 
 CMakeFiles/TA14.dir/BigNumber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TA14.dir/BigNumber.cpp.s"
-	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/User/CLionProjects/TA14/BigNumber.cpp -o CMakeFiles/TA14.dir/BigNumber.cpp.s
+	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/BigNumber.cpp -o CMakeFiles/TA14.dir/BigNumber.cpp.s
+
+CMakeFiles/TA14.dir/MyBigNumber.cpp.o: CMakeFiles/TA14.dir/flags.make
+CMakeFiles/TA14.dir/MyBigNumber.cpp.o: ../MyBigNumber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TA14.dir/MyBigNumber.cpp.o"
+	C:/cygwin64/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TA14.dir/MyBigNumber.cpp.o -c /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/MyBigNumber.cpp
+
+CMakeFiles/TA14.dir/MyBigNumber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TA14.dir/MyBigNumber.cpp.i"
+	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/MyBigNumber.cpp > CMakeFiles/TA14.dir/MyBigNumber.cpp.i
+
+CMakeFiles/TA14.dir/MyBigNumber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TA14.dir/MyBigNumber.cpp.s"
+	C:/cygwin64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/MyBigNumber.cpp -o CMakeFiles/TA14.dir/MyBigNumber.cpp.s
 
 # Object files for target TA14
 TA14_OBJECTS = \
 "CMakeFiles/TA14.dir/main.cpp.o" \
-"CMakeFiles/TA14.dir/BigNumber.cpp.o"
+"CMakeFiles/TA14.dir/BigNumber.cpp.o" \
+"CMakeFiles/TA14.dir/MyBigNumber.cpp.o"
 
 # External object files for target TA14
 TA14_EXTERNAL_OBJECTS =
 
 TA14.exe: CMakeFiles/TA14.dir/main.cpp.o
 TA14.exe: CMakeFiles/TA14.dir/BigNumber.cpp.o
+TA14.exe: CMakeFiles/TA14.dir/MyBigNumber.cpp.o
 TA14.exe: CMakeFiles/TA14.dir/build.make
 TA14.exe: CMakeFiles/TA14.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TA14.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TA14.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TA14.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +123,6 @@ CMakeFiles/TA14.dir/clean:
 .PHONY : CMakeFiles/TA14.dir/clean
 
 CMakeFiles/TA14.dir/depend:
-	cd /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/User/CLionProjects/TA14 /cygdrive/c/Users/User/CLionProjects/TA14 /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug /cygdrive/c/Users/User/CLionProjects/TA14/cmake-build-debug/CMakeFiles/TA14.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug /cygdrive/c/Users/PC-MAHDI/CLionProjects/BigNumbe/cmake-build-debug/CMakeFiles/TA14.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TA14.dir/depend
 
