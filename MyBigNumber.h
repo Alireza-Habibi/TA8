@@ -1,14 +1,13 @@
-//
-// Created by PC-MAHDI on ۲۱/۰۵/۲۰۲۰.
-//
-
 #ifndef TA14_MYBIGNUMBER_H
 #define TA14_MYBIGNUMBER_H
 
+#include "BigNumber.h"
 
-class MyBigNumber {
+class MyBigNumber :  public BigNumber {
+    BigNumber multByOneDigit( BigNumber& myBig , int a);
 
 };
 
 
-#endif //TA14_MYBIGNUMBER_H
+
+#endif
