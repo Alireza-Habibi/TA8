@@ -13,11 +13,11 @@ class BigNumber {
 
 protected:
     int8_t * numArray = nullptr;
-
+    BigNumber(){}
 private:
     bool validate( const std::string & str, const std::string & pattern);
     unsigned numOfTrimCharsOnLeft( const std::string & str );
-    BigNumber(){}
+
 
 
     //max(a, b)    a.max(b)
@@ -59,7 +59,7 @@ public:
     bool operator<( const BigNumber & myBig) const;
     BigNumber absoluteValue() const;
     BigNumber operator>>( unsigned shift );
-
+    BigNumber operator << ( unsigned shift );
     bool sign;
     unsigned numOfDigits;
 
