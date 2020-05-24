@@ -451,14 +451,10 @@ BigNumber BigNumber::operator++(int)  {
 BigNumber BigNumber::operator<<(unsigned shift ) {
     BigNumber temp;
     size_t i{0};
+    temp.sign = sign;
+    temp.numOfDigits = numOfDigits + shift;
+    temp.numArray = new int8_t[temp.numOfDigits];
 
-    if( numOfDigits == shift ) {
-        temp = "0";
-    }
-    else{
-        temp.sign = sign;
-        temp.numOfDigits = numOfDigits + shift;
-        temp.numArray = new int8_t[temp.numOfDigits];
         for(; i < shift; ++i){
             temp[i] = 0;
         }
@@ -466,7 +462,6 @@ BigNumber BigNumber::operator<<(unsigned shift ) {
         for(; i < temp.numOfDigits; ++i){
             temp[i] = numArray[i - shift];
         }
-    }
 
     return temp;
 }

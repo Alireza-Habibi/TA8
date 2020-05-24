@@ -12,8 +12,8 @@ class BigNumber {
     friend BigNumber operator-( const BigNumber & num1, const BigNumber & num2);
 
 protected:
-    int8_t * numArray = nullptr;
     BigNumber(){}
+
 private:
     bool validate( const std::string & str, const std::string & pattern);
     unsigned numOfTrimCharsOnLeft( const std::string & str );
@@ -43,6 +43,7 @@ public:
     void setValues( const std::string & str );
     bool getSign() const;
     unsigned int getNumOfDigits() const;
+
     BigNumber & operator=(const BigNumber & rightNum);
     BigNumber & operator=(BigNumber && rightNum) noexcept ;   // move assignment overloading
     BigNumber operator-() const;
@@ -64,6 +65,8 @@ public:
     unsigned numOfDigits;
 
     int8_t& operator[](size_t index);
+
+    int8_t * numArray = nullptr;
 };
 
 

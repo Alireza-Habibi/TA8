@@ -3,6 +3,7 @@
 
 #include "BigNumber.h"
 #include "MyBigNumber.h"
+#include <exception>
 
 using namespace std;
 
@@ -22,9 +23,9 @@ int main() {
 //    x = -y;
 //    BigNumber z = -y;
 //    cout << (x != y) << endl;
-      BigNumber myBig1 = -17319;
-      MyBigNumber myBig2 = "0000173";
-     cout << myBig2.multByOneDigit(2) <<endl;
+      MyBigNumber myBig1 = "23423448";
+      BigNumber myBig2 = "0023423432423423449";
+      cout << myBig1*myBig2 <<endl;
     //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
     //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);
 //    cout << (myBig1>>3) << "\t" << (myBig1>>3).getSign() << endl;
