@@ -121,3 +121,15 @@ MyBigNumber &MyBigNumber::operator=(MyBigNumber &&rightNum) noexcept {
     }
     return *this;
 }
+
+MyBigNumber MyBigNumber::power ( const BigNumber& myBig , unsigned pow ){
+    MyBigNumber temp = myBig;
+
+    for (size_t i{0} ; i < pow-1 ; ++i){
+        temp =  temp*myBig;
+    }
+
+    return temp;
+}
+
+MyBigNumber::MyBigNumber(const BigNumber &number) : BigNumber(number) {}

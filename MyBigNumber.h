@@ -17,9 +17,10 @@ public:
     MyBigNumber& operator+=( BigNumber number);
     MyBigNumber& operator=( const MyBigNumber& number);
     MyBigNumber(const MyBigNumber& number);
+    MyBigNumber(const BigNumber& number);
     MyBigNumber ( MyBigNumber && myBig ) noexcept;  // move constructor
     MyBigNumber & operator=(MyBigNumber && rightNum) noexcept ;   // move assignment overloading
-
+    static MyBigNumber power ( const BigNumber& myBig , unsigned pow );
 };
 
 

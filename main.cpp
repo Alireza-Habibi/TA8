@@ -24,8 +24,8 @@ int main() {
 //    BigNumber z = -y;
 //    cout << (x != y) << endl;
       MyBigNumber myBig1 = "23423448";
-      BigNumber myBig2 = "0023423432423423449";
-      cout << myBig1*myBig2 <<endl;
+      BigNumber myBig2 = "034";
+      cout << MyBigNumber::power(myBig2 , 4)  <<endl;
     //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
     //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);
 //    cout << (myBig1>>3) << "\t" << (myBig1>>3).getSign() << endl;
