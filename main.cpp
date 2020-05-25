@@ -10,34 +10,28 @@ using namespace std;
 int main() {
     cout << boolalpha;
 
-//    for(unsigned char i{0}; i <= 127; ++i){
-//        std::cout << (int) i << '\t' << i << std::endl;
-//    }
-    //std::cout << x << std::endl;
-//    BigNumber x{-37};
-//    string str = "-0000";
-//    BigNumber y{str};
-//    cout << y << endl;
-//    cout << "Enter a number: ";
-//    cin >> x;
-//    x = -y;
-//    BigNumber z = -y;
-//    cout << (x != y) << endl;
-      MyBigNumber myBig1 = "23423448";
-      BigNumber myBig2 = "032342344";
+      MyBigNumber myBig1 = "432";
+      MyBigNumber myBig2 = "04";
       try{
-      cout << myBig2(4,3)  <<endl;}
+      cout << myBig1/myBig2  <<endl;}
       catch(out_of_range e ){
           cout << e.what();
       }
-    //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
-    //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);
-//    cout << (myBig1>>3) << "\t" << (myBig1>>3).getSign() << endl;
-//    try{
-//        cout << BigNumber::unsignedSubtract(myBig1, myBig2) << endl;
-//    }
-//    catch( out_of_range e){
-//        cout << e.what() << endl;
-//    }
+
+//      cout << myBig1.multByOneDigit(3)<<endl
+//      << myBig2* myBig1 << endl;
+//    MyBigNumber multByOneDigit( int a);
+//    MyBigNumber operator*( const BigNumber& myBig) ;
+//    MyBigNumber& operator+=( BigNumber number);
+//    MyBigNumber& operator=( const MyBigNumber& number);
+//    MyBigNumber(const MyBigNumber& number);
+//    MyBigNumber(const BigNumber& number);
+//    MyBigNumber ( MyBigNumber && myBig ) noexcept;  // move constructor
+//    MyBigNumber & operator=(MyBigNumber && rightNum) noexcept ;   // move assignment overloading
+//    MyBigNumber operator /( MyBigNumber& myBig);
+//    MyBigNumber operator %( MyBigNumber& myBig);
+//    static MyBigNumber power ( const BigNumber& myBig , unsigned pow );
+//    MyBigNumber operator () (int a , int b);
+//    MyBigNumber upside_down();
     return 0;
 }
