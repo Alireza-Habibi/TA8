@@ -51,6 +51,7 @@ public:
     BigNumber & operator--();
     BigNumber operator++(int);
     BigNumber operator--(int);
+    BigNumber operator () (int a , int b);
     int operator[](size_t index) const;
     bool operator==( const BigNumber & myBig) const;
     bool operator!=( const BigNumber & myBig) const;
@@ -58,6 +59,8 @@ public:
     bool operator<=( const BigNumber & myBig) const;
     bool operator>( const BigNumber & myBig) const;
     bool operator<( const BigNumber & myBig) const;
+    BigNumber operator /(const BigNumber& myBig);
+    BigNumber operator %(const BigNumber& myBig);
     BigNumber absoluteValue() const;
     BigNumber operator>>( unsigned shift );
     BigNumber operator << ( unsigned shift );

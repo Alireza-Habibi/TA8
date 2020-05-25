@@ -125,6 +125,10 @@ MyBigNumber &MyBigNumber::operator=(MyBigNumber &&rightNum) noexcept {
 MyBigNumber MyBigNumber::power ( const BigNumber& myBig , unsigned pow ){
     MyBigNumber temp = myBig;
 
+    if ( pow ==0 ){
+        return 1 ;
+    }
+
     for (size_t i{0} ; i < pow-1 ; ++i){
         temp =  temp*myBig;
     }

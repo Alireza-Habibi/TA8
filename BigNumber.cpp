@@ -466,3 +466,38 @@ BigNumber BigNumber::operator<<(unsigned shift ) {
     return temp;
 }
 
+//BigNumber BigNumber::operator /(const BigNumber& myBig){
+//    if ( myBig > *this ){
+//        throw invalid_argument("myBig should be less than this !!!");
+//    }
+//
+//    BigNumber temp;
+//    temp.sign = ((this->sign && myBig.sign) || (!(this->sign) && !(myBig.sign)));
+//    temp.numOfDigits = this->numOfDigits - myBig.numOfDigits + 1;
+//    temp.numArray = new int8_t(temp.numOfDigits);
+//    for (size_t i{0} ; i< temp.numOfDigits ; ++i){
+//
+//    }
+//}
+//
+//BigNumber BigNumber::operator %(const BigNumber& myBig){
+//
+//}
+
+BigNumber BigNumber::operator()(int a, int b) {
+    if ( a < b ){
+        throw out_of_range("b must be less than a !!");
+    }
+
+    BigNumber temp;
+    temp.sign = sign;
+    temp.numOfDigits = b;
+    temp.numArray = new int8_t(temp.numOfDigits);
+
+    for (int i{(int)temp.numOfDigits-1} ; i >= 0 ; --i){
+        temp[i] = this->numArray[a];
+        --a;
+    }
+
+    return temp;
+}
