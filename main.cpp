@@ -18,20 +18,13 @@ int main() {
           cout << e.what();
       }
 
-//      cout << myBig1.multByOneDigit(3)<<endl
-//      << myBig2* myBig1 << endl;
-//    MyBigNumber multByOneDigit( int a);
-//    MyBigNumber operator*( const BigNumber& myBig) ;
-//    MyBigNumber& operator+=( BigNumber number);
-//    MyBigNumber& operator=( const MyBigNumber& number);
-//    MyBigNumber(const MyBigNumber& number);
-//    MyBigNumber(const BigNumber& number);
-//    MyBigNumber ( MyBigNumber && myBig ) noexcept;  // move constructor
-//    MyBigNumber & operator=(MyBigNumber && rightNum) noexcept ;   // move assignment overloading
-//    MyBigNumber operator /( MyBigNumber& myBig);
-//    MyBigNumber operator %( MyBigNumber& myBig);
-//    static MyBigNumber power ( const BigNumber& myBig , unsigned pow );
-//    MyBigNumber operator () (int a , int b);
-//    MyBigNumber upside_down();
+      cout << myBig1.multByOneDigit(3)<<endl
+      << myBig2* myBig1 << endl
+      << MyBigNumber::power(myBig2,3);
+
+      myBig1 = myBig2;
+      cout<< myBig1;
+
+
     return 0;
 }
