@@ -25,6 +25,5 @@ int main() {
       myBig1 = myBig2;
       cout<< myBig1;
 
-
     return 0;
 }
